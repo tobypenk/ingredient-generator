@@ -116,15 +116,13 @@ def optimize(X, Y, a_prev, parameters, learning_rate = 0.01,vocab_size=27):
 
 def model(data, ix_to_char, char_to_ix, num_iterations = 35000, n_a = 50, cross_section_depth = 10, vocab_size = 48, verbose = False):
     """
-    Trains the model and generates dinosaur names. 
-    
     Arguments:
     data -- text corpus
     ix_to_char -- dictionary that maps the index to a character
     char_to_ix -- dictionary that maps a character to an index
     num_iterations -- number of iterations to train the model for
     n_a -- number of units of the RNN cell
-    dino_names -- number of dinosaur names you want to sample at each iteration. 
+    cross_section_depth -- number of samples at each iteration. 
     vocab_size -- number of unique characters found in the text (size of the vocabulary)
     
     Returns:
